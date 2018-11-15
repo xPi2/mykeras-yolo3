@@ -16,7 +16,7 @@ import os
 os.environ['KMP_DUPLICATE_LIB_OK']='True'
 
 def _main():
-    annotation_path = 'dataset/cocoset/chanel_train.txt'
+    annotation_path = 'dataset/chanelset/chanel_train.txt' # Update to your feeding list file
     log_dir = 'logs/002/'
     classes_path = 'model_data/chanel_classes.txt'
     anchors_path = 'model_data/chanel_anchors.txt'
@@ -32,7 +32,7 @@ def _main():
             freeze_body=2, weights_path='model_data/tiny_yolo_weights.h5')
     else:
         model = create_model(input_shape, anchors, num_classes,
-            freeze_body=2, weights_path='model_data/chanel.h5') # make sure you know what you freeze
+            freeze_body=2, weights_path='model_data/yolo_weights.h5') # make sure you know what you freeze
 
     logging = TensorBoard(log_dir=log_dir)
     checkpoint = ModelCheckpoint(log_dir + 'ep{epoch:03d}-loss{loss:.3f}-val_loss{val_loss:.3f}.h5',

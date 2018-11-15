@@ -1,0 +1,32 @@
+<annotation>
+<folder>training</folder>
+<filename>chanelimg000249.jpg</filename>
+<source>
+<database>synthetic initialization</database>
+<annotation>PASCAL VOC2007</annotation>
+<image>synthetic</image>
+<flickrid>none</flickrid>
+</source>
+<owner>
+<flickrid>none</flickrid>
+<name>none</name>
+</owner>
+<size>
+<width>640</width>
+<height>360</height>
+<depth>3</depth>
+</size>
+<segmented>0</segmented>
+<object>
+<name>chanel</name>
+<pose>Unspecified</pose>
+<truncated>0</truncated>
+<difficult>0</difficult>
+<bndbox>
+<xmin>218</xmin>
+<ymin>104</ymin>
+<xmax>422</xmax>
+<ymax>257</ymax>
+</bndbox>
+</object>
+</annotation>

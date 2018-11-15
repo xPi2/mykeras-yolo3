@@ -5,7 +5,7 @@ class YOLO_Kmeans:
 
     def __init__(self, cluster_number, filename):
         self.cluster_number = cluster_number
-        self.filename = "model_data/data/chanel_train.txt"
+        self.filename = "dataset/chanelset/chanel_train.txt" # Update to your feeding list file for training
 
     def iou(self, boxes, clusters):  # 1 box -> k clusters
         n = boxes.shape[0]
