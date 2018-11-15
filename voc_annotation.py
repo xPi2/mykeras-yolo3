@@ -7,7 +7,7 @@ classes = ["chanel", "chanel_text"]
 
 
 def convert_annotation(image_id, list_file):
-    in_file = open('model_data/data/annotations/%s.xml'%image_id)
+    in_file = open('dataset/cocoset/annotations/%s.xml'%image_id)
     tree=ET.parse(in_file)
     root = tree.getroot()
 
@@ -24,11 +24,11 @@ def convert_annotation(image_id, list_file):
 wd = getcwd()
 
 for image_set in sets:
-    image_ids = open('model_data/data/ids/chanel_%s.txt'%image_set).read().strip().split()
-    image_ids += open('model_data/data/ids/chanel_text_%s.txt'%image_set).read().strip().split()
-    list_file = open('%s/model_data/data/chanel_%s.txt'%(wd, image_set), 'w')
+    image_ids = open('dataset/cocoset/ids/chanel_%s.txt'%image_set).read().strip().split()
+    image_ids += open('dataset/cocoset/ids/chanel_text_%s.txt'%image_set).read().strip().split()
+    list_file = open('dataset/cocoset/chanel_%s.txt'%image_set, 'w')
     for image_id in image_ids:
-        list_file.write('%s/model_data/data/images/%s.jpg'%(wd, image_id))
+        list_file.write('%s/dataset/cocoset/images/%s.jpg'%(wd, image_id))
         convert_annotation(image_id, list_file)
         list_file.write('\n')
     list_file.close()

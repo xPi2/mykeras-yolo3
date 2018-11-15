@@ -16,10 +16,10 @@ import os
 os.environ['KMP_DUPLICATE_LIB_OK']='True'
 
 def _main():
-    annotation_path = 'model_data/data/chanel_train.txt'
-    log_dir = 'logs/002/'
-    classes_path = 'model_data/chanel_classes.txt'
-    anchors_path = 'model_data/yolo_anchors.txt'
+    annotation_path = 'dataset/cocoset/chanel_train.txt'
+    log_dir = 'logs/001/'
+    classes_path = 'dataset/cocoset/chanel_classes.txt'
+    anchors_path = 'dataset/cocoset/yolo_anchors.txt'
     class_names = get_classes(classes_path)
     num_classes = len(class_names)
     anchors = get_anchors(anchors_path)
