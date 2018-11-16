@@ -1,77 +1,77 @@
-/Users/xpi2/Development/mykeras-yolo3/dataset/cocoset/images/chanelimg000032.jpg 213,49,262,79,0 195,228,231,288,0 339,157,370,218,0 240,212,278,230,0 227,471,274,504,0 402,391,442,417,0
-/Users/xpi2/Development/mykeras-yolo3/dataset/cocoset/images/chanelimg000061.jpg 463,137,494,159,0
-/Users/xpi2/Development/mykeras-yolo3/dataset/cocoset/images/chanelimg000086.jpg 41,76,91,101,0 343,196,383,228,0
-/Users/xpi2/Development/mykeras-yolo3/dataset/cocoset/images/chanelimg000089.jpg 334,87,394,152,0
-/Users/xpi2/Development/mykeras-yolo3/dataset/cocoset/images/chanelimg000090.jpg 475,204,538,268,0
-/Users/xpi2/Development/mykeras-yolo3/dataset/cocoset/images/chanelimg000109.jpg 260,326,283,365,0 424,252,459,294,0
-/Users/xpi2/Development/mykeras-yolo3/dataset/cocoset/images/chanelimg000124.jpg 285,131,323,171,0
-/Users/xpi2/Development/mykeras-yolo3/dataset/cocoset/images/chanelimg000128.jpg 425,739,457,775,0
-/Users/xpi2/Development/mykeras-yolo3/dataset/cocoset/images/chanelimg000132.jpg 443,153,501,166,0 397,130,451,142,0 441,359,503,372,1
-/Users/xpi2/Development/mykeras-yolo3/dataset/cocoset/images/chanelimg000134.jpg 240,105,272,121,0 149,12,173,24,0
-/Users/xpi2/Development/mykeras-yolo3/dataset/cocoset/images/chanelimg000136.jpg 158,353,182,388,0 252,373,299,385,1 85,172,116,184,1 237,173,260,182,1
-/Users/xpi2/Development/mykeras-yolo3/dataset/cocoset/images/chanelimg000141.jpg 16,11,121,102,0 744,6,804,68,0 598,616,662,691,1 307,1,334,67,1
-/Users/xpi2/Development/mykeras-yolo3/dataset/cocoset/images/chanelimg000145.jpg 270,393,319,440,0 378,256,454,272,1 404,315,425,419,1
-/Users/xpi2/Development/mykeras-yolo3/dataset/cocoset/images/chanelimg000154.jpg 499,216,518,267,0 181,156,191,178,0 161,22,253,63,1 558,9,605,59,1
-/Users/xpi2/Development/mykeras-yolo3/dataset/cocoset/images/chanelimg000163.jpg 26,192,52,211,0 119,231,174,240,1 411,228,467,239,1 242,202,349,219,1
-/Users/xpi2/Development/mykeras-yolo3/dataset/cocoset/images/chanelimg000181.jpg 71,112,86,139,0 256,124,270,138,0 168,69,221,92,1
-/Users/xpi2/Development/mykeras-yolo3/dataset/cocoset/images/chanelimg000185.jpg 499,297,582,372,0 364,134,459,212,0 217,102,298,219,1
-/Users/xpi2/Development/mykeras-yolo3/dataset/cocoset/images/chanelimg000186.jpg 91,115,107,128,0 167,116,184,128,0 253,114,302,125,1 342,114,383,124,1
-/Users/xpi2/Development/mykeras-yolo3/dataset/cocoset/images/chanelimg000204.jpg 703,662,1215,1040,0
-/Users/xpi2/Development/mykeras-yolo3/dataset/cocoset/images/chanelimg000213.jpg 194,92,217,118,0 48,192,107,246,0 433,188,534,263,0 27,62,108,88,1 447,2,603,43,1
-/Users/xpi2/Development/mykeras-yolo3/dataset/cocoset/images/chanelimg000235.jpg 295,4,416,94,0
-/Users/xpi2/Development/mykeras-yolo3/dataset/cocoset/images/chanelimg000249.jpg 218,104,422,257,0
-/Users/xpi2/Development/mykeras-yolo3/dataset/cocoset/images/chanelimg000255.jpg 329,406,415,486,0 262,324,288,344,0
-/Users/xpi2/Development/mykeras-yolo3/dataset/cocoset/images/chanelimg000256.jpg 272,561,321,656,0 565,677,654,699,1
-/Users/xpi2/Development/mykeras-yolo3/dataset/cocoset/images/chanelimg000263.jpg 530,378,546,391,0
-/Users/xpi2/Development/mykeras-yolo3/dataset/cocoset/images/chanelimg000334.jpg 802,295,904,394,0 455,241,527,321,0 225,256,293,273,1 547,237,626,273,1
-/Users/xpi2/Development/mykeras-yolo3/dataset/cocoset/images/chanelimg000345.jpg 306,46,438,179,0 275,42,304,181,1
-/Users/xpi2/Development/mykeras-yolo3/dataset/cocoset/images/chanelimg000360.jpg 1135,482,1185,533,0 698,756,1266,849,1 993,525,1036,537,1 936,511,968,523,1
-/Users/xpi2/Development/mykeras-yolo3/dataset/cocoset/images/chanelimg000423.jpg 571,285,684,317,0 298,437,467,456,1
-/Users/xpi2/Development/mykeras-yolo3/dataset/cocoset/images/chanelimg000431.jpg 153,201,217,254,0 169,80,264,96,1
-/Users/xpi2/Development/mykeras-yolo3/dataset/cocoset/images/chanelimg000503.jpg 369,39,393,50,0 135,173,185,193,1 248,203,299,220,1 387,165,420,176,1 59,313,448,367,1 117,65,171,80,1
-/Users/xpi2/Development/mykeras-yolo3/dataset/cocoset/images/chanelimg000248.jpg 497,368,699,401,1
-/Users/xpi2/Development/mykeras-yolo3/dataset/cocoset/images/chanelimg000252.jpg 63,366,222,395,1
-/Users/xpi2/Development/mykeras-yolo3/dataset/cocoset/images/chanelimg000259.jpg 102,189,145,215,1
-/Users/xpi2/Development/mykeras-yolo3/dataset/cocoset/images/chanelimg000264.jpg 82,295,224,318,1
-/Users/xpi2/Development/mykeras-yolo3/dataset/cocoset/images/chanelimg000268.jpg 624,884,709,903,1
-/Users/xpi2/Development/mykeras-yolo3/dataset/cocoset/images/chanelimg000269.jpg 62,366,103,376,1
-/Users/xpi2/Development/mykeras-yolo3/dataset/cocoset/images/chanelimg000287.jpg 196,351,339,382,1
-/Users/xpi2/Development/mykeras-yolo3/dataset/cocoset/images/chanelimg000293.jpg 378,32,564,66,1 213,581,269,606,1
-/Users/xpi2/Development/mykeras-yolo3/dataset/cocoset/images/chanelimg000294.jpg 25,971,785,1098,1 609,703,701,725,1
-/Users/xpi2/Development/mykeras-yolo3/dataset/cocoset/images/chanelimg000295.jpg 190,491,235,502,1 270,492,302,503,1 754,17,941,56,1
-/Users/xpi2/Development/mykeras-yolo3/dataset/cocoset/images/chanelimg000298.jpg 349,331,590,370,1 441,191,505,203,1
-/Users/xpi2/Development/mykeras-yolo3/dataset/cocoset/images/chanelimg000308.jpg 41,73,161,98,1 725,375,794,420,1
-/Users/xpi2/Development/mykeras-yolo3/dataset/cocoset/images/chanelimg000310.jpg 351,22,546,58,1 454,645,499,656,1
-/Users/xpi2/Development/mykeras-yolo3/dataset/cocoset/images/chanelimg000315.jpg 213,369,284,413,1
-/Users/xpi2/Development/mykeras-yolo3/dataset/cocoset/images/chanelimg000316.jpg 918,633,981,648,1
-/Users/xpi2/Development/mykeras-yolo3/dataset/cocoset/images/chanelimg000317.jpg 602,808,681,825,1
-/Users/xpi2/Development/mykeras-yolo3/dataset/cocoset/images/chanelimg000332.jpg 3310,3047,4493,3250,1 3714,1179,4086,1247,1
-/Users/xpi2/Development/mykeras-yolo3/dataset/cocoset/images/chanelimg000338.jpg 134,425,267,451,1
-/Users/xpi2/Development/mykeras-yolo3/dataset/cocoset/images/chanelimg000339.jpg 23,134,96,148,1 23,389,94,403,1 369,130,440,146,1 539,128,611,142,1 195,387,267,403,1 365,388,437,403,1 537,386,608,400,1
-/Users/xpi2/Development/mykeras-yolo3/dataset/cocoset/images/chanelimg000346.jpg 150,273,260,296,1
-/Users/xpi2/Development/mykeras-yolo3/dataset/cocoset/images/chanelimg000348.jpg 484,719,548,734,1
-/Users/xpi2/Development/mykeras-yolo3/dataset/cocoset/images/chanelimg000365.jpg 65,215,168,234,1
-/Users/xpi2/Development/mykeras-yolo3/dataset/cocoset/images/chanelimg000369.jpg 67,442,295,479,1 223,347,279,358,1 131,391,175,401,1
-/Users/xpi2/Development/mykeras-yolo3/dataset/cocoset/images/chanelimg000381.jpg 620,551,886,599,1 636,366,691,378,1 723,367,777,378,1 813,364,869,377,1
-/Users/xpi2/Development/mykeras-yolo3/dataset/cocoset/images/chanelimg000386.jpg 769,13,971,49,1 688,502,749,515,1 785,600,845,614,1
-/Users/xpi2/Development/mykeras-yolo3/dataset/cocoset/images/chanelimg000389.jpg 731,308,799,323,1
-/Users/xpi2/Development/mykeras-yolo3/dataset/cocoset/images/chanelimg000392.jpg 10,508,293,561,1 52,419,99,430,1
-/Users/xpi2/Development/mykeras-yolo3/dataset/cocoset/images/chanelimg000397.jpg 1217,632,1400,679,1
-/Users/xpi2/Development/mykeras-yolo3/dataset/cocoset/images/chanelimg000399.jpg 120,537,186,552,1 372,646,439,661,1
-/Users/xpi2/Development/mykeras-yolo3/dataset/cocoset/images/chanelimg000406.jpg 223,707,337,730,1
-/Users/xpi2/Development/mykeras-yolo3/dataset/cocoset/images/chanelimg000408.jpg 787,80,1056,128,1
-/Users/xpi2/Development/mykeras-yolo3/dataset/cocoset/images/chanelimg000417.jpg 721,986,802,1002,1 577,1141,944,1202,1
-/Users/xpi2/Development/mykeras-yolo3/dataset/cocoset/images/chanelimg000430.jpg 375,565,581,600,1 1,1103,941,1234,1
-/Users/xpi2/Development/mykeras-yolo3/dataset/cocoset/images/chanelimg000432.jpg 268,667,516,708,1
-/Users/xpi2/Development/mykeras-yolo3/dataset/cocoset/images/chanelimg000435.jpg 164,13,273,32,1 204,312,238,320,1
-/Users/xpi2/Development/mykeras-yolo3/dataset/cocoset/images/chanelimg000437.jpg 241,444,319,459,1
-/Users/xpi2/Development/mykeras-yolo3/dataset/cocoset/images/chanelimg000442.jpg 508,466,692,497,1 571,180,628,192,1
-/Users/xpi2/Development/mykeras-yolo3/dataset/cocoset/images/chanelimg000445.jpg 297,737,598,799,1
-/Users/xpi2/Development/mykeras-yolo3/dataset/cocoset/images/chanelimg000446.jpg 361,1000,461,1032,1 515,940,618,966,1 792,689,874,709,1 635,667,707,692,1
-/Users/xpi2/Development/mykeras-yolo3/dataset/cocoset/images/chanelimg000465.jpg 117,196,181,209,1
-/Users/xpi2/Development/mykeras-yolo3/dataset/cocoset/images/chanelimg000471.jpg 1062,507,1138,523,1 692,636,1246,719,1
-/Users/xpi2/Development/mykeras-yolo3/dataset/cocoset/images/chanelimg000475.jpg 220,185,290,198,1 126,332,379,362,1
-/Users/xpi2/Development/mykeras-yolo3/dataset/cocoset/images/chanelimg000488.jpg 405,678,669,724,1 11,1296,1052,1478,1
-/Users/xpi2/Development/mykeras-yolo3/dataset/cocoset/images/chanelimg000510.jpg 181,383,221,394,1 217,518,261,529,1
-/Users/xpi2/Development/mykeras-yolo3/dataset/cocoset/images/chanelimg000512.jpg 1199,191,1230,300,1
-/Users/xpi2/Development/mykeras-yolo3/dataset/cocoset/images/chanelimg000516.jpg 76,213,95,238,1
+/Users/xpi2/Development/mykeras-yolo3/dataset/chanelset/images/chanelimg000032.jpg 213,49,262,79,0 195,228,231,288,0 339,157,370,218,0 240,212,278,230,0 227,471,274,504,0 402,391,442,417,0
+/Users/xpi2/Development/mykeras-yolo3/dataset/chanelset/images/chanelimg000061.jpg 463,137,494,159,0
+/Users/xpi2/Development/mykeras-yolo3/dataset/chanelset/images/chanelimg000086.jpg 41,76,91,101,0 343,196,383,228,0
+/Users/xpi2/Development/mykeras-yolo3/dataset/chanelset/images/chanelimg000089.jpg 334,87,394,152,0
+/Users/xpi2/Development/mykeras-yolo3/dataset/chanelset/images/chanelimg000090.jpg 475,204,538,268,0
+/Users/xpi2/Development/mykeras-yolo3/dataset/chanelset/images/chanelimg000109.jpg 260,326,283,365,0 424,252,459,294,0
+/Users/xpi2/Development/mykeras-yolo3/dataset/chanelset/images/chanelimg000124.jpg 285,131,323,171,0
+/Users/xpi2/Development/mykeras-yolo3/dataset/chanelset/images/chanelimg000128.jpg 425,739,457,775,0
+/Users/xpi2/Development/mykeras-yolo3/dataset/chanelset/images/chanelimg000132.jpg 443,153,501,166,0 397,130,451,142,0 441,359,503,372,1
+/Users/xpi2/Development/mykeras-yolo3/dataset/chanelset/images/chanelimg000134.jpg 240,105,272,121,0 149,12,173,24,0
+/Users/xpi2/Development/mykeras-yolo3/dataset/chanelset/images/chanelimg000136.jpg 158,353,182,388,0 252,373,299,385,1 85,172,116,184,1 237,173,260,182,1
+/Users/xpi2/Development/mykeras-yolo3/dataset/chanelset/images/chanelimg000141.jpg 16,11,121,102,0 744,6,804,68,0 598,616,662,691,1 307,1,334,67,1
+/Users/xpi2/Development/mykeras-yolo3/dataset/chanelset/images/chanelimg000145.jpg 270,393,319,440,0 378,256,454,272,1 404,315,425,419,1
+/Users/xpi2/Development/mykeras-yolo3/dataset/chanelset/images/chanelimg000154.jpg 499,216,518,267,0 181,156,191,178,0 161,22,253,63,1 558,9,605,59,1
+/Users/xpi2/Development/mykeras-yolo3/dataset/chanelset/images/chanelimg000163.jpg 26,192,52,211,0 119,231,174,240,1 411,228,467,239,1 242,202,349,219,1
+/Users/xpi2/Development/mykeras-yolo3/dataset/chanelset/images/chanelimg000181.jpg 71,112,86,139,0 256,124,270,138,0 168,69,221,92,1
+/Users/xpi2/Development/mykeras-yolo3/dataset/chanelset/images/chanelimg000185.jpg 499,297,582,372,0 364,134,459,212,0 217,102,298,219,1
+/Users/xpi2/Development/mykeras-yolo3/dataset/chanelset/images/chanelimg000186.jpg 91,115,107,128,0 167,116,184,128,0 253,114,302,125,1 342,114,383,124,1
+/Users/xpi2/Development/mykeras-yolo3/dataset/chanelset/images/chanelimg000204.jpg 703,662,1215,1040,0
+/Users/xpi2/Development/mykeras-yolo3/dataset/chanelset/images/chanelimg000213.jpg 194,92,217,118,0 48,192,107,246,0 433,188,534,263,0 27,62,108,88,1 447,2,603,43,1
+/Users/xpi2/Development/mykeras-yolo3/dataset/chanelset/images/chanelimg000235.jpg 295,4,416,94,0
+/Users/xpi2/Development/mykeras-yolo3/dataset/chanelset/images/chanelimg000249.jpg 218,104,422,257,0
+/Users/xpi2/Development/mykeras-yolo3/dataset/chanelset/images/chanelimg000255.jpg 329,406,415,486,0 262,324,288,344,0
+/Users/xpi2/Development/mykeras-yolo3/dataset/chanelset/images/chanelimg000256.jpg 272,561,321,656,0 565,677,654,699,1
+/Users/xpi2/Development/mykeras-yolo3/dataset/chanelset/images/chanelimg000263.jpg 530,378,546,391,0
+/Users/xpi2/Development/mykeras-yolo3/dataset/chanelset/images/chanelimg000334.jpg 802,295,904,394,0 455,241,527,321,0 225,256,293,273,1 547,237,626,273,1
+/Users/xpi2/Development/mykeras-yolo3/dataset/chanelset/images/chanelimg000345.jpg 306,46,438,179,0 275,42,304,181,1
+/Users/xpi2/Development/mykeras-yolo3/dataset/chanelset/images/chanelimg000360.jpg 1135,482,1185,533,0 698,756,1266,849,1 993,525,1036,537,1 936,511,968,523,1
+/Users/xpi2/Development/mykeras-yolo3/dataset/chanelset/images/chanelimg000423.jpg 571,285,684,317,0 298,437,467,456,1
+/Users/xpi2/Development/mykeras-yolo3/dataset/chanelset/images/chanelimg000431.jpg 153,201,217,254,0 169,80,264,96,1
+/Users/xpi2/Development/mykeras-yolo3/dataset/chanelset/images/chanelimg000503.jpg 369,39,393,50,0 135,173,185,193,1 248,203,299,220,1 387,165,420,176,1 59,313,448,367,1 117,65,171,80,1
+/Users/xpi2/Development/mykeras-yolo3/dataset/chanelset/images/chanelimg000248.jpg 497,368,699,401,1
+/Users/xpi2/Development/mykeras-yolo3/dataset/chanelset/images/chanelimg000252.jpg 63,366,222,395,1
+/Users/xpi2/Development/mykeras-yolo3/dataset/chanelset/images/chanelimg000259.jpg 102,189,145,215,1
+/Users/xpi2/Development/mykeras-yolo3/dataset/chanelset/images/chanelimg000264.jpg 82,295,224,318,1
+/Users/xpi2/Development/mykeras-yolo3/dataset/chanelset/images/chanelimg000268.jpg 624,884,709,903,1
+/Users/xpi2/Development/mykeras-yolo3/dataset/chanelset/images/chanelimg000269.jpg 62,366,103,376,1
+/Users/xpi2/Development/mykeras-yolo3/dataset/chanelset/images/chanelimg000287.jpg 196,351,339,382,1
+/Users/xpi2/Development/mykeras-yolo3/dataset/chanelset/images/chanelimg000293.jpg 378,32,564,66,1 213,581,269,606,1
+/Users/xpi2/Development/mykeras-yolo3/dataset/chanelset/images/chanelimg000294.jpg 25,971,785,1098,1 609,703,701,725,1
+/Users/xpi2/Development/mykeras-yolo3/dataset/chanelset/images/chanelimg000295.jpg 190,491,235,502,1 270,492,302,503,1 754,17,941,56,1
+/Users/xpi2/Development/mykeras-yolo3/dataset/chanelset/images/chanelimg000298.jpg 349,331,590,370,1 441,191,505,203,1
+/Users/xpi2/Development/mykeras-yolo3/dataset/chanelset/images/chanelimg000308.jpg 41,73,161,98,1 725,375,794,420,1
+/Users/xpi2/Development/mykeras-yolo3/dataset/chanelset/images/chanelimg000310.jpg 351,22,546,58,1 454,645,499,656,1
+/Users/xpi2/Development/mykeras-yolo3/dataset/chanelset/images/chanelimg000315.jpg 213,369,284,413,1
+/Users/xpi2/Development/mykeras-yolo3/dataset/chanelset/images/chanelimg000316.jpg 918,633,981,648,1
+/Users/xpi2/Development/mykeras-yolo3/dataset/chanelset/images/chanelimg000317.jpg 602,808,681,825,1
+/Users/xpi2/Development/mykeras-yolo3/dataset/chanelset/images/chanelimg000332.jpg 3310,3047,4493,3250,1 3714,1179,4086,1247,1
+/Users/xpi2/Development/mykeras-yolo3/dataset/chanelset/images/chanelimg000338.jpg 134,425,267,451,1
+/Users/xpi2/Development/mykeras-yolo3/dataset/chanelset/images/chanelimg000339.jpg 23,134,96,148,1 23,389,94,403,1 369,130,440,146,1 539,128,611,142,1 195,387,267,403,1 365,388,437,403,1 537,386,608,400,1
+/Users/xpi2/Development/mykeras-yolo3/dataset/chanelset/images/chanelimg000346.jpg 150,273,260,296,1
+/Users/xpi2/Development/mykeras-yolo3/dataset/chanelset/images/chanelimg000348.jpg 484,719,548,734,1
+/Users/xpi2/Development/mykeras-yolo3/dataset/chanelset/images/chanelimg000365.jpg 65,215,168,234,1
+/Users/xpi2/Development/mykeras-yolo3/dataset/chanelset/images/chanelimg000369.jpg 67,442,295,479,1 223,347,279,358,1 131,391,175,401,1
+/Users/xpi2/Development/mykeras-yolo3/dataset/chanelset/images/chanelimg000381.jpg 620,551,886,599,1 636,366,691,378,1 723,367,777,378,1 813,364,869,377,1
+/Users/xpi2/Development/mykeras-yolo3/dataset/chanelset/images/chanelimg000386.jpg 769,13,971,49,1 688,502,749,515,1 785,600,845,614,1
+/Users/xpi2/Development/mykeras-yolo3/dataset/chanelset/images/chanelimg000389.jpg 731,308,799,323,1
+/Users/xpi2/Development/mykeras-yolo3/dataset/chanelset/images/chanelimg000392.jpg 10,508,293,561,1 52,419,99,430,1
+/Users/xpi2/Development/mykeras-yolo3/dataset/chanelset/images/chanelimg000397.jpg 1217,632,1400,679,1
+/Users/xpi2/Development/mykeras-yolo3/dataset/chanelset/images/chanelimg000399.jpg 120,537,186,552,1 372,646,439,661,1
+/Users/xpi2/Development/mykeras-yolo3/dataset/chanelset/images/chanelimg000406.jpg 223,707,337,730,1
+/Users/xpi2/Development/mykeras-yolo3/dataset/chanelset/images/chanelimg000408.jpg 787,80,1056,128,1
+/Users/xpi2/Development/mykeras-yolo3/dataset/chanelset/images/chanelimg000417.jpg 721,986,802,1002,1 577,1141,944,1202,1
+/Users/xpi2/Development/mykeras-yolo3/dataset/chanelset/images/chanelimg000430.jpg 375,565,581,600,1 1,1103,941,1234,1
+/Users/xpi2/Development/mykeras-yolo3/dataset/chanelset/images/chanelimg000432.jpg 268,667,516,708,1
+/Users/xpi2/Development/mykeras-yolo3/dataset/chanelset/images/chanelimg000435.jpg 164,13,273,32,1 204,312,238,320,1
+/Users/xpi2/Development/mykeras-yolo3/dataset/chanelset/images/chanelimg000437.jpg 241,444,319,459,1
+/Users/xpi2/Development/mykeras-yolo3/dataset/chanelset/images/chanelimg000442.jpg 508,466,692,497,1 571,180,628,192,1
+/Users/xpi2/Development/mykeras-yolo3/dataset/chanelset/images/chanelimg000445.jpg 297,737,598,799,1
+/Users/xpi2/Development/mykeras-yolo3/dataset/chanelset/images/chanelimg000446.jpg 361,1000,461,1032,1 515,940,618,966,1 792,689,874,709,1 635,667,707,692,1
+/Users/xpi2/Development/mykeras-yolo3/dataset/chanelset/images/chanelimg000465.jpg 117,196,181,209,1
+/Users/xpi2/Development/mykeras-yolo3/dataset/chanelset/images/chanelimg000471.jpg 1062,507,1138,523,1 692,636,1246,719,1
+/Users/xpi2/Development/mykeras-yolo3/dataset/chanelset/images/chanelimg000475.jpg 220,185,290,198,1 126,332,379,362,1
+/Users/xpi2/Development/mykeras-yolo3/dataset/chanelset/images/chanelimg000488.jpg 405,678,669,724,1 11,1296,1052,1478,1
+/Users/xpi2/Development/mykeras-yolo3/dataset/chanelset/images/chanelimg000510.jpg 181,383,221,394,1 217,518,261,529,1
+/Users/xpi2/Development/mykeras-yolo3/dataset/chanelset/images/chanelimg000512.jpg 1199,191,1230,300,1
+/Users/xpi2/Development/mykeras-yolo3/dataset/chanelset/images/chanelimg000516.jpg 76,213,95,238,1

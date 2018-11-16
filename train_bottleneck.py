@@ -19,15 +19,15 @@ def _main():
     annotation_path = 'dataset/chanelset/chanel_train.txt' # Update to your feeding list file
     log_dir = 'logs/001/'
     classes_path = 'model_data/chanel_classes.txt'
-    anchors_path = 'model_data/yolo_anchors.txt'
+    anchors_path = 'model_data/chanel_anchors.txt'
     class_names = get_classes(classes_path)
     num_classes = len(class_names)
     anchors = get_anchors(anchors_path)
 
-    input_shape = (416,416) # multiple of 32, hw
+    input_shape = (608,608) # multiple of 32, hw
 
     model, bottleneck_model, last_layer_model = create_model(input_shape, anchors, num_classes,
-            freeze_body=2, weights_path='model_data/yolo_weights.h5') # make sure you know what you freeze
+            freeze_body=2, weights_path='model_data/training_weights.h5') # make sure you know what you freeze
 
     logging = TensorBoard(log_dir=log_dir)
     checkpoint = ModelCheckpoint(log_dir + 'ep{epoch:03d}-loss{loss:.3f}-val_loss{val_loss:.3f}.h5',

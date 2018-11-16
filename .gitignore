@@ -1,9 +1,11 @@
 ### Python ###
 # Byte-compiled / optimized / DLL files
 __pycache__/
+*.npz
 
 # Weights
 *.h5
+*.weights
 
 #Logs
 logs/
