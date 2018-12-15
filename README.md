@@ -10,8 +10,10 @@ My own Keras implementation of YOLOv3 (Tensorflow backend) inspired by [qqwweee/
 
 ## Quick Start
 
-1. Download my pre-trained weights [chanel.h5]()
+1. Download my pre-trained weights [chanel.h5](https://www.dropbox.com/s/48nss8mnof827ga/chanel.h5?dl=0)
 3. Run YOLO detection.
+
+\* My model is a not too bad model because a poor quick dataset, you can train your best or download other model files (COCO, VOC, ...)
 
 ```
 wget path/to/weights.h5
