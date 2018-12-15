@@ -1,16 +1,31 @@
 import os
 import argparse
-from yolo import YOLO, detect_video
-from PIL import Image
 
-def detect_img(yolo):
-    output_path = 'postData/'
+from PIL import Image
+from yolo import YOLO, detect_video
+
+
+def detect_img(yolo, input_path, output_path):
+    "Detect model items in the image"
+
     if not os.path.exists(output_path):
         os.mkdir(output_path)
 
-    input_path = input('Input image filename:')
+    # If input is a folder predict all the content images
+    if os.path.isdir(input_path):
+        files = os.listdir(input_path)
+        for imagefile in files:
+            try:
+                image = Image.open(os.path.join(input_path, imagefile))
+            except:
+                print('Open error ' + imagefile)
+            else:
+                r_image = yolo.detect_image(image, imagefile)
+                r_image.save(output_path + imagefile)
+        yolo.close_session()
 
-    if input_path.endswith('.txt'):
+    # If input is a .txt list predict all elements
+    elif input_path.endswith('.txt'):
         image_paths = []
 
         with open(input_path) as f:
@@ -32,6 +47,7 @@ def detect_img(yolo):
                     r_image.save(output_path + image_name)
             yolo.close_session()
 
+    # If input is a file predict over file
     else:
         image_name = input_path.split('/')[-1]
         try:
@@ -73,19 +89,15 @@ if __name__ == '__main__':
 
     parser.add_argument(
         '--image', default=False, action="store_true",
-        help='Image detection mode, will ignore all positional arguments'
+        help='Image detection mode'
     )
-    '''
-    Command line positional arguments -- for video detection mode
-    '''
     parser.add_argument(
-        "--input", nargs='?', type=str,required=False,default='./path2your_video',
-        help = "Video input path"
+        "--input", nargs='?', type=str,required=False,default='./predict_inputs',
+        help = "Content input path"
     )
-
     parser.add_argument(
-        "--output", nargs='?', type=str, default="",
-        help = "[Optional] Video output path"
+        "--output", nargs='?', type=str, default="./predict_outputs",
+        help = "[Optional] Content output path"
     )
 
     FLAGS = parser.parse_args()
@@ -95,9 +107,7 @@ if __name__ == '__main__':
         Image detection mode, disregard any remaining command line arguments
         """
         print("Image detection mode")
-        if "input" in FLAGS:
-            print(" Ignoring remaining command line arguments: " + FLAGS.input + "," + FLAGS.output)
-        detect_img(YOLO(**vars(FLAGS)))
+        detect_img(YOLO(**vars(FLAGS)), FLAGS.input, FLAGS.output)
     elif "input" in FLAGS:
         detect_video(YOLO(**vars(FLAGS)), FLAGS.input, FLAGS.output)
     else:

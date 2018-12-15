@@ -9,24 +9,29 @@ from timeit import default_timer as timer
 
 import numpy as np
 from keras import backend as K
+from keras.utils import multi_gpu_model
 from keras.models import load_model
 from keras.layers import Input
 from PIL import Image, ImageFont, ImageDraw
 
 from yolo3.model import yolo_eval, yolo_body, tiny_yolo_body
 from yolo3.utils import letterbox_image
-import os
-from keras.utils import multi_gpu_model
+
 
 class YOLO(object):
+
     _defaults = {
-        "model_path": 'model_data/chanel1.h5',
-        "anchors_path": 'model_data/chanel_anchors.txt',
-        "classes_path": 'model_data/chanel_classes.txt',
-        "score" : 0.3,
-        "iou" : 0.45,
-        "model_image_size" : (608, 608),
-        "gpu_num" : 1,
+        # Change to your weights file
+        "model_path": 'model_data/model.h5',
+        # Change to your kmeans.py generated anchors file
+        "anchors_path": 'model_data/anchors.txt',
+        # Change to your classes file
+        "classes_path": 'model_data/classes.txt',
+        "score": 0.3,
+        "iou": 0.45,
+        # Check your model image size
+        "model_image_size": (416, 416),
+        "gpu_num": 1,
     }
 
     @classmethod
@@ -37,12 +42,14 @@ class YOLO(object):
             return "Unrecognized attribute name '" + n + "'"
 
     def __init__(self, **kwargs):
-        self.__dict__.update(self._defaults) # set up default values
-        self.__dict__.update(kwargs) # and update with user overrides
+        self.__dict__.update(self._defaults)  # set up default values
+        self.__dict__.update(kwargs)  # and update with user overrides
         self.class_names = self._get_class()
         self.anchors = self._get_anchors()
         self.sess = K.get_session()
         self.boxes, self.scores, self.classes = self.generate()
+        print("Using %s | %s | %s" % (self.model_path,
+              self.anchors_path, self.classes_path))
 
     def _get_class(self):
         classes_path = os.path.expanduser(self.classes_path)
@@ -65,7 +72,7 @@ class YOLO(object):
         # Load model, or construct model and load weights.
         num_anchors = len(self.anchors)
         num_classes = len(self.class_names)
-        is_tiny_version = num_anchors==6 # default setting
+        is_tiny_version = num_anchors == 6  # default setting
         try:
             self.yolo_model = load_model(model_path, compile=False)
         except:
@@ -194,7 +201,7 @@ def detect_video(yolo, video_path, output_path=""):
     while True:
         return_value, frame = vid.read()
         image = Image.fromarray(frame)
-        image = yolo.detect_image(image)
+        image = yolo.detecto_image(image, str(curr_fps))
         result = np.asarray(image)
         curr_time = timer()
         exec_time = curr_time - prev_time
