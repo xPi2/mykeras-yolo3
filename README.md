@@ -7,29 +7,38 @@
 My own Keras implementation of YOLOv3 (Tensorflow backend) inspired by [qqwweee/keras-yolo3](https://github.com/qqwweee/keras-yolo3).
 
 ---
+## TO-DO
+List of tasks:
+- [ ]: **All-tools-included** Packed tools from dataset creation to final predicts
+- [ ]: **Baseline**. Evaluation framework
+- [ ]: **Avoid convert**. Implement YOLO v3 in Keras directly. Hard
 
-## Quick Start
+---
+## Set-up
 
-1. Download my pre-trained weights [chanel.h5](https://www.dropbox.com/s/48nss8mnof827ga/chanel.h5?dl=0)
+1. Download YOLOv3 weights from [YOLO website](http://pjreddie.com/darknet/yolo/).
+`wget https://pjreddie.com/media/files/yolov3.weights`
+2. Convert the Darknet YOLO model to a Keras model.
+`python convert.py yolov3.cfg yolov3.weights model_data/yolo.h5`
 3. Run YOLO detection.
-
-\* My model is a not too bad model because a poor quick dataset, you can train your best or download other model files (COCO, VOC, ...)
-
 ```
-wget path/to/weights.h5
-python predict.py [OPTIONS...] --image, for image detection mode
+python predict.py [OPTIONS...] --image, for image detection mode,
+python predict.py [video_path] [output_path (optional)] for video detection mode OR
+python predict.py [--webcam] for webcam detection
+
 ```
 
 ### Usage
-Use --help to see usage of **predict.py**:
+Use --help to see usage of yolo_video.py:
 ```
 usage: predict.py [-h] [--model MODEL] [--anchors ANCHORS]
-                     [--classes CLASSES] [--gpu_num GPU_NUM] [--image]
+                     [--classes CLASSES] [--gpu_num GPU_NUM]
+                     [--image] [--webcam]
                      [--input] [--output]
 
 positional arguments:
-  --input        Video input path
-  --output       Video output path
+  --input        Input path
+  --output       Output path
 
 optional arguments:
   -h, --help         show this help message and exit
@@ -39,17 +48,9 @@ optional arguments:
   --classes CLASSES  path to class definitions, default
                      model_data/coco_classes.txt
   --gpu_num GPU_NUM  Number of GPU to use, default 1
-  --image            Image detection mode, will ignore all positional arguments
+  --image            Image detection mode
+  --webcam           Webcam detection mode
 ```
-
-
-Soft warning: **predict.py** generates a lastPredictReport.txt file with the last predictions in this format:
-
-`box1 box2 ... boxN image_file_id`
-
----
-
-4. MultiGPU usage: use `--gpu_num N` to use N GPUs. It is passed to the [Keras multi_gpu_model()](https://keras.io/utils/#multi_gpu_model).
 
 ## Training
 
@@ -57,42 +58,60 @@ Soft warning: **predict.py** generates a lastPredictReport.txt file with the las
     One row for one image;  
     Row format: `image_file_path box1 box2 ... boxN`;  
     Box format: `x_min,y_min,x_max,y_max,class_id` (no space).  
-    For VOC dataset, edit and try `python voc_annotation.py`  
-    
-    Example:
+    For VOC dataset, try `python voc_annotation.py`  
+    An example:
     ```
     path/to/img1.jpg 50,100,150,200,0 30,50,200,120,3
     path/to/img2.jpg 120,300,250,600,2
     ...
     ```
-    
-2. Generate anchors to your dataset with **kmeans.py** (inner edit needed) and a classes.txt file to your model
 
-3. Make sure you have run `python convert.py -w yolov3.cfg yolov3.weights model_data/yolo_weights.h5`  
-    The file model_data/yolo_weights.h5 is used to load pretrained weights.
+2. Modify kmeans.py path and number of clusters. Then run it and copy the new `yolo_anchors.txt` file to the `model_data` folder.
 
-4. Modify **train.py** and start training.
+3. Modify train.py paths and strategy and start training.  
     `python train.py`  
     Use your trained weights or checkpoint weights with command line option `--model model_file` when using predict.py
     Remember to modify class path or anchor path, with `--classes class_file` and `--anchors anchor_file`.
 
 If you want to use original pretrained weights for YOLOv3:  
-    1. `wget https://pjreddie.com/media/files/darknet53.conv.74`  
-    2. rename it as darknet53.weights  
-    3. `python convert.py -w darknet53.cfg darknet53.weights model_data/darknet53_weights.h5`  
-    4. use model_data/darknet53_weights.h5 in train.py
+    1. `wget https://pjreddie.com/media/files/yolov3.weights`    
+    2. `python convert.py yolov3.cfg yolov3.weights model_data/yolo_weights.h5`  
+    4. use model_data/yolo_weights.h5 in train.py
 
----
 
-## Issues to know
+## Research
+List of resources that could be useful:
+- Background images data set: http://vision.cs.princeton.edu/projects/2010/SUN/
+- Number plate recognition with Tensorflow: http://matthewearl.github.io/2016/05/06/cnn-anpr/ code: https://github.com/matthewearl/deep-anpr
+- Deep Logo (a brand logo recognition system using deep convolutional neural networks): https://github.com/satojkovic/DeepLogo
+- Deep Learning Logo Detection with Data Expansion by Synthesising Context: https://arxiv.org/pdf/1612.09322.pdf
+- Scalable Deep Learning Logo Detection: https://arxiv.org/pdf/1803.11417.pdf
+- QMUL-OpenLogo: Open Logo Detection Challenge: https://qmul-openlogo.github.io/
+- Open Logo Detection Challenge (2018): https://arxiv.org/pdf/1807.01964.pdf
+- Open Set Logo Detection and Retrieval (2017): https://arxiv.org/pdf/1710.10891.pdf
+- LOGO-Net. Large-scale Deep Logo Detection and Brand Recognition
+with Deep Region-based Convolutional Networks: https://arxiv.org/pdf/1511.02462.pdf
+- Deep Learning for Logo Recognition: https://arxiv.org/pdf/1701.02620.pdf
 
-1. The test environment is
-    - Python 3.5.2
-    - Keras 2.1.5
-    - tensorflow 1.6.0
-    
-2. The speed is slower than Darknet. Replacing PIL with opencv may help a little.
 
-3. The training strategy is for reference only. Adjust it according to your dataset and your goal. And add further strategy if needed.
+## Data sets
+### Supervised Logo images
+- QMUL-OpenLogo: https://drive.google.com/open?id=1p1BWofDJOKXqCtO0JPT5VyuIPOsuxOuj
+- QMUL-OpenLogo (Supplyment Imageset List for OpenLogo Semi-Supervised Challenge): https://drive.google.com/file/d/1jvPAik5mGziKsq4Qsgu7GhiLSWlEwDSQ/view
+- FlickrLogo-32: http://www.multimedia-computing.de/flickrlogos/
+- WebLogo-2M: http://www.eecs.qmul.ac.uk/~hs308/WebLogo-2M.html/
+- TopLogo-10: http://www.eecs.qmul.ac.uk/~hs308/qmul_toplogo10.html/
+- Flickr Logo 27: http://image.ntua.gr/iva/datasets/flickr_logos/
+- Logo32plus: http://www.ivl.disco.unimib.it/activities/logo-recognition/
+- BelgaLogos: http://www-sop.inria.fr/members/Alexis.Joly/BelgaLogos/BelgaLogos.html
+- Logos-In-The-Wild: https://www.iosb.fraunhofer.de/servlet/is/78045/
+- SportsLogo: https://ieeexplore.ieee.org/document/8237781
 
-4. For speeding up the training process with frozen layers train_bottleneck.py can be used. It will compute the bottleneck features of the frozen model first and then only trains the last layers. This makes training on CPU possible in a reasonable time. See [this](https://blog.keras.io/building-powerful-image-classification-models-using-very-little-data.html) for more information on bottleneck features.
+### Background images
+- SUN Database. Scene Categorization Benchmark: http://vision.cs.princeton.edu/projects/2010/SUN/
+
+### Useful tools
+- Google Images Downloader script: https://github.com/hardikvasa/google-images-download
+- Web free image labeling tool: https://github.com/NaturalIntelligence/imglab
+- Standalone free image labeling tool 1: https://github.com/tzutalin/labelImg
+- Standalone free image labeling tool 2: https://github.com/wkentaro/labelme
